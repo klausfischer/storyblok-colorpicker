@@ -1,16 +1,21 @@
-var styles = '<style>';
-styles += '.cbox {';
-styles += 'width: 15px;';
-styles += 'height: 15px; margin-right: 5px; display: inline-block;';
-styles += '}';
-styles += '</style>';
+const styles = `<style>
+	.cbox {
+		width: 15px;
+		height: 15px; 
+		margin: 5px 5px 0 0; 
+		display: inline-block;
+	}
+	</style>`;
 
-var tmpl =  styles + '<input v-model="model" class="uk-width-1-1" />';
-tmpl += '<span class="cbox" v-for="c in colors" v-bind:style="{ backgroundColor: c}" v-on:click="colorClicked"></span>';
+const template = `
+	${styles}
+	<input v-model="model" class="uk-width-1-1" />
+	<span class="cbox" v-for="c in colors" v-bind:style="{ backgroundColor: c}" v-on:click="colorClicked"></span>
+	`;
 
 module.exports = {
-	template: tmpl,
-	data: function() {
+	template,
+	data () {
 		return {
 			model: "red",
 			colors: [
@@ -20,15 +25,14 @@ module.exports = {
 	},
 	watch: {
 		'model': {
-			handler: function (value) {
+			handler (value) {
 				console.log('changed color', value);
 				this.$emit('changed-model', value);
 			}
 		}
 	},
 	methods: {
-		colorClicked: function(event) {
-			console.log(event.target.style.backgroundColor);
+		colorClicked (event) {
 			this.model = event.target.style.backgroundColor;
 		}
 	}
