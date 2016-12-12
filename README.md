@@ -1,6 +1,8 @@
 # Storyblok ColorPicker Plugin
 
-> shows a colorpicker to select a color value
+> shows a colorpicker to select a color value 
+
+![Showing storyblok-colorpicker as a field type](./screenshot.png)
 
 ## Usage
 
@@ -11,6 +13,10 @@
 
 ## Planned Features
 
+- Transpile to ES5
 - Fixed palette for predefined colors
-- evtl. use `https://www.npmjs.com/package/vue-color`
+
+## Uses
+
+- uses Sketch colorpicker from `https://www.npmjs.com/package/vue-color`
 

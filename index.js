@@ -1,16 +1,4 @@
-const styles = `
-	<style>
-	.cbox {
-		width: 15px;
-		height: 15px; 
-		margin: 5px 5px 0 0; 
-		display: inline-block;
-	}
-	</style>`;
-
 const template = `
-	${styles}
-	<input v-model="model" class="uk-width-1-1" />
 	<sketch-picker :colors.sync="colors"></sketch-picker>
 	`;
 
@@ -26,7 +14,6 @@ module.exports = {
 	template,
 	data () {
 		return {
-			model: "red",
 			colors: {
 				hex: "#1a5e25"
 			}
