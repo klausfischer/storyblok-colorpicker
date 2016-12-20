@@ -1,5 +1,3 @@
-'use strict';
-
 var template = '\n\t<sketch-picker :colors.sync="colors"></sketch-picker>\n\t';
 
 module.exports = {
