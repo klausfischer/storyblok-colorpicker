@@ -1,12 +1,9 @@
-# Storyblok ColorPicker Plugin
+# ColorPicker Plugin
 
 > shows a colorpicker to select a color value 
 
 ![Showing storyblok-colorpicker as a field type](./screenshot.png)
 
-## Usage
-
-- Edit your content and add a new field with the type *Other* and type `colorpicker` in the appearing *Custom type* field
 
 ## Planned Features
 
@@ -17,3 +14,8 @@
 
 - uses Sketch colorpicker from `https://www.npmjs.com/package/vue-color`
 
+## How to use
+
+Open the Component Editor View and use the `Other` type. Now you should be able to search for the `number` plugin by just writing `number` in the input field and press save.
+
+![Where to add Plugins](https://a.storyblok.com/f/40039/40f6e6b955/bildschirmfoto-2016-12-20-um-09-15-01.png)
