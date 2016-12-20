@@ -1,4 +1,4 @@
-var template = '\n\t<sketch-picker :colors.sync="colors"></sketch-picker>\n\t';
+var template = '<sketch-picker :colors.sync="colors"></sketch-picker>';
 
 module.exports = {
 	props: ['model'],
